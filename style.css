@@ -1,0 +1,39 @@
+body{
+    background-image:    url("https://metrouk2.files.wordpress.com/2014/05/3313.jpg");
+    background-size:     fill;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
+}
+
+img{
+    height:300px;
+    width: auto;
+}
+
+.sea-captain{
+    width:100%;
+    height:auto;
+}
+
+.aye-aye{
+    text-align: center;
+    float: left;
+    font-size: 200px;
+    color: red;
+    background-color: yellow;
+    height: 500px;
+    display: block;
+}
+
+.container{
+    background-color:rgba(208, 250, 243,0.5);
+}
+.btn .btn-danger{
+    padding:20px !important;
+    font-size: 50px !important;
+}
+
+p{
+    font-size: 20px;
+}
+
