@@ -9,16 +9,22 @@
 	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
 		$(function(){
+			// Demonstrates the jQuery .ready() function by showing text when the DOM is ready
 			$(".aye-aye").text("Aye-aye CAPTAIN!!");
-			$('.do-ya').click(function() {
-				$(".punk").remove();
-			});
+
+			// Demonstrates the .empty() function
 			$('.quiet-kids').click(function() {
 				$(".aye-aye").empty();
 			});
 			$('.see-ya').click(function() {
 				$(".see-ya").empty();
 			});
+
+			// Demonstrates the .remove function
+			$('.do-ya').click(function() {
+				$(".punk").remove();
+			});
+
 			$('.poof').click(function() {
 				$(".poof").remove();
 			});
@@ -29,22 +35,27 @@
 	<div class="container">
 		<img class="sea-captain" alt="Sea Captain" src = "http://i.imgur.com/ykVslbp.jpg"/>
 		<h1 class="aye-aye"></h1>
+		<!--This section descrives the .ready() function in JQuery and gives an example-->
 		<section>
 			<h1>$( document ).ready</h1>
 			<p> The .ready() method waits until the element is ready before calling the code inside. $(document).ready waits until the DOM is loaded before callign javascript inside.
 		</section>
+		<!--This section descrives the .empty() function in JQuery and gives an couple examples-->
 		<section>
 			<h1>.empty()<h1>
+			<!--The contents of the button empties when clicked, but the button itself remains-->
 			<button class="btn btn-danger quiet-kids" type="button">QUIET KIDS!!!</button>
 			<button class="btn btn-danger see-ya" type="button">SEE YA</button>
 			<p>Removes the contents of an html element from the DOM (Document Object Model).</p>
 		</section>
+		<!--This section descrives the .remove() function in JQuery and gives an couple examples-->
 		<section>
 			<h1>.remove()</h1>
 			<p>Removes an entire html element from the DOM (Document Object Model) as well as everything inside it.</p>
 			<div class="row">
 				<div class="col-md-6"></div>
 				<div class="col-md-6">
+					<!--The picture of the punk is removed when one button is clicked, the other button disappears when it is clicked-->
 					<img class="feeling-lucky" alt="Dirty Harry Feel Lucky" src="https://i.ytimg.com/vi/V7Nci-GVuHE/maxresdefault.jpg"/>
 					<button class="btn btn-danger do-ya" type="button">Feeling Lucky Punk</button>
 					<img class="punk" alt="Dirty Harry Punk" src = "https://i.ytimg.com/vi/l4jZ7rtWnvs/maxresdefault.jpg"/>
